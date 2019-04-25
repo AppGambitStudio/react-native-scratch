@@ -5,6 +5,7 @@ import { Header, Left, Body, Button, Title, Right, Text } from 'native-base'
 import Icon from 'react-native-vector-icons/Entypo';
 import { DrawerActions } from 'react-navigation'
 import NetInfo from './check-network';
+import { Colors, Images } from '@themes';
 
 class AppHeader extends React.Component {
 
@@ -23,10 +24,10 @@ class AppHeader extends React.Component {
                         </TouchableOpacity>
                     </Left>
                     <Body >
-                        {/* <Image source={Images.applogo} resizeMode='contain' style={{ width: 250, height: 100 }} /> */}
+                        <Image source={Images["header-logo"]} resizeMode='contain' style={{ width: 200, height: 50 }} />
                     </Body>
                 </Header>
-                <NetInfo />
+                <NetInfo/>
             </>
         )
     }
@@ -55,7 +56,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(AppHeader)
 const styles = StyleSheet.create({
     appHeader: {
         // alignSelf: 'center',
-        backgroundColor: '#E0647B'
+        backgroundColor: Colors.header
     },
     leftIcon: {
         width: 50,
