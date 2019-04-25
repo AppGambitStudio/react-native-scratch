@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "native-base": "^2.12.1",
-    "react": "16.8.3",
-    "react-native": "0.59.2",
+    "react": "^16.8.3",
+    "react-native": "^0.59.2",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-hooks": "0.0.6",
     "react-native-linear-gradient": "^2.5.4",
