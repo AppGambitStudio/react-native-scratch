@@ -6,10 +6,16 @@ Clone repo
 git clone https://github.com/AppGambitStudio/react-native-scratch.git
 ```
 
-### Installation
+### Installation with npm
 
 ```
 $ npm install
+```
+
+### Installation with yarn
+
+```
+$ yarn add
 ```
 
 ### Link react-native third party lib
