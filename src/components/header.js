@@ -15,35 +15,19 @@ class AppHeader extends React.Component {
     render() {
         const { openDrawer } = this.props.navigation;
         return (
-            <SafeAreaView>
+            <>
                 <Header style={styles.appHeader}>
                     <Left>
                         <TouchableOpacity onPress={() => { openDrawer() }}>
                             <Icon name="menu" style={{ padding: 10 }} size={30} color="white" />
                         </TouchableOpacity>
                     </Left>
-                    {/* {this.props.backButton ? (
-                        <Left>
-                            <TouchableOpacity onPress={() => { this.props.navigation.dispatch(DrawerActions.toggleDrawer()) }}>
-                                <Icon name="menu" style={{ padding: 10 }} size={30} color="white" />
-                            </TouchableOpacity>
-                        </Left>
-                    ) : (
-                            <View style={styles.leftIcon}>
-                                {this.props.leftIcon}
-                            </View>
-                        )} */}
                     <Body >
                         {/* <Image source={Images.applogo} resizeMode='contain' style={{ width: 250, height: 100 }} /> */}
                     </Body>
-                    {/* <Right>
-                        <View style={ApplicationStyles.appVersion}>
-                            <Text style={[ApplicationStyles.colorWhite, { fontSize: 12 }]}>v{appVersion}</Text>
-                        </View>
-                    </Right> */}
                 </Header>
                 <NetInfo />
-            </SafeAreaView>
+            </>
         )
     }
 }
